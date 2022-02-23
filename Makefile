@@ -6,7 +6,7 @@ format:
 	black *.py
 
 
-# lint:
-# 	pylint --disable=R,C app.py
+lint:
+	pylint --disable=R,C app.py
 
-all: install #lint test
+all: install lint
